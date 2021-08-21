@@ -18,7 +18,7 @@ header h2 {
 
 footer {
   background-image: linear-gradient(#a4a4a79f, white);
-  padding: 20px, 0;
+  padding: 20px 0;
 }
 
 .jumbotron {
@@ -33,7 +33,7 @@ footer {
 }
 
 .row-content {
-  padding: 50px, 0;
-  border-bottom: ridge;
+  padding: 50px 0;
+  border-bottom: 1px ridge;
   min-height: 200px;
 }
