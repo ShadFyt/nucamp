@@ -30,6 +30,7 @@ footer {
     rgba(238, 238, 238, 0.507) 60%
   );
   color: black;
+  margin: 0;
 }
 
 .row-content {
