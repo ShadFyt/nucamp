@@ -35,8 +35,8 @@
             <h2>a better way to camp</h2>
           </div>
           <div class="col-md-4 col-lg-2 mt-4">
-            <button class="btn btn-info btn-lg text-nowrap" data-toggle="modal" data-target="#reserveModal" 
-              >Reserve Campsite</button>
+            <a class="btn btn-info btn-lg text-nowrap" data-toggle="modal" data-target="#reserveModal" 
+              >Reserve Campsite</a>
           </div>
         </div>
       </div>
@@ -83,6 +83,7 @@
                       class="form-control"
                       name="date"
                       placeholder="date"
+                      value="date"
                     />
                   </div>
                 </div>
@@ -90,17 +91,17 @@
                   <label class="col-sm-6 col-form-label" for="siteTent">Campsite Type</label>
 
                   <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons" role="group">
-                    <label for="siteTent" class="btn btn-success active">
-                      <input type="checkbox" checked autocomplete="off" name="sites" id="siteTent">Tent
+                    <label class="btn btn-success active">
+                      <input type="radio" checked autocomplete="off" value="tent" name="sites" id="siteTent">Tent
                     </label>
-                    <label for="siteRV" class="btn btn-primary">
-                      <input type="checkbox" checked autocomplete="off" name="sites" id="siteRV">RV
+                    <label class="btn btn-primary">
+                      <input type="radio" autocomplete="off" value="rv" name="sites" id="siteRV">RV
                     </label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col">
-                    <button class="btn btn-secondary">Cancel</button>
+                    <button type="button" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
                     <button type="submit" class="btn btn-primary">Search</button>
                   </div>
                 </div>
@@ -155,10 +156,50 @@
                 >
               </li>
             </ul>
+            <span class="navbar-text ml-auto">
+              <a role="button" data-toggle="modal" data-target="#loginModal">
+                <i class="fa fa-sign-in"> Login</i>
+              </a>
+            </span>
           </div>
         </div>
       </div>
     </nav>
+
+    <div class="modal fade" id="loginModal" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Login</h3>
+            <button class="close" type="button" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="form-group col-12">
+                  <label for="loginEmail" class="sr-only">Email Address</label>
+                  <input type="email" id="loginEmail" class="form-control form-control-sm" placeholder="Enter email">
+                </div>
+                <div class="form-gruop col-12">
+                  <label for="loginPassword" class="sr-only">Password</label>
+                  <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                </div>
+                <div class="col">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">Remember me</label>
+                  </div>
+                  <div class="form-row">
+                    <button class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
       <div class="row">
@@ -234,55 +275,6 @@
                 you can't beat.
               </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row row-content">
-      <div class="col-sm-6 mx-auto">
-        <div class="card">
-          <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
-          <div class="card-body">
-            <form action="" id="reserveForm">
-              <div class="row form-group">
-                <label class="col-sm-6 col-form-label" for="numCampers"
-                  >Number of Campers</label
-                >
-                <div class="col">
-                  <select
-                    name="numCampers"
-                    id="numCampers"
-                    class="form-control"
-                  >
-                    <option value="">Select...</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row form-group">
-                <label class="col-sm-6 col-form-label" for="date">Date</label>
-                <div class="col">
-                  <input
-                    type="date"
-                    id="date"
-                    class="form-control"
-                    name="date"
-                    placeholder="date"
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <button type="submit" class="btn btn-primary">Search</button>
-                </div>
-              </div>
-            </form>
           </div>
         </div>
       </div>
