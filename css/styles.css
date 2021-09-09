@@ -1,0 +1,43 @@
+body {
+  font-family: "Open Sans", sans-serif; }
+
+h1,
+h2,
+h3 {
+  font-family: "Lobster", cursive; }
+
+h2 {
+  color: #3280ad; }
+
+header h2 {
+  color: #3280ad; }
+
+.site-footer {
+  background-image: linear-gradient(#a4a4a79f, white);
+  padding: 20px 0; }
+
+.jumbotron {
+  padding: 30px;
+  background-image: linear-gradient(to right, rgba(189, 190, 190, 0.918), rgba(241, 224, 224, 0.74) 30%, rgba(238, 238, 238, 0.507) 60%);
+  color: black;
+  margin: 0; }
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
+
+.navbar {
+  background-color: #901CAD; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.carousel {
+  border: solid 6px rgba(189, 190, 190, 0.918); }
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100; }
